@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7A2AA6A2621E30C003F0DA5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */; };
+		E7A2AA6D2621E81A003F0DA5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA6C2621E819003F0DA5 /* Extension.swift */; };
+		E7A2AA702621ECA8003F0DA5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */; };
+		E7A2AA742621F50D003F0DA5 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA732621F50D003F0DA5 /* GoogleService.swift */; };
+		E7A2AA782621F58E003F0DA5 /* AddressResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA772621F58E003F0DA5 /* AddressResult.swift */; };
 		E7FF0ED22620F9CA0080F2D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF0ED12620F9CA0080F2D7 /* AppDelegate.swift */; };
 		E7FF0ED42620F9CA0080F2D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF0ED32620F9CA0080F2D7 /* SceneDelegate.swift */; };
 		E7FF0ED62620F9CA0080F2D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF0ED52620F9CA0080F2D7 /* ViewController.swift */; };
 		E7FF0ED92620F9CA0080F2D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FF0ED72620F9CA0080F2D7 /* Main.storyboard */; };
 		E7FF0EDB2620F9CC0080F2D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FF0EDA2620F9CC0080F2D7 /* Assets.xcassets */; };
 		E7FF0EDE2620F9CC0080F2D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FF0EDC2620F9CC0080F2D7 /* LaunchScreen.storyboard */; };
+		F50C2C0E7758DA4673F17183 /* Pods_NetlogMobilCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB97D5CEEBD5B4E990A41DC /* Pods_NetlogMobilCase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760755764DDE438DD61E0C7D /* Pods-NetlogMobilCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetlogMobilCase.debug.xcconfig"; path = "Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E7A2AA6C2621E819003F0DA5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E7A2AA732621F50D003F0DA5 /* GoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
+		E7A2AA772621F58E003F0DA5 /* AddressResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressResult.swift; sourceTree = "<group>"; };
 		E7FF0ECE2620F9CA0080F2D7 /* NetlogMobilCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetlogMobilCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FF0ED12620F9CA0080F2D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FF0ED32620F9CA0080F2D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		E7FF0EDA2620F9CC0080F2D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FF0EDD2620F9CC0080F2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FF0EDF2620F9CC0080F2D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB20DF455EE11DC3010027E1 /* Pods-NetlogMobilCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetlogMobilCase.release.xcconfig"; path = "Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase.release.xcconfig"; sourceTree = "<group>"; };
+		FFB97D5CEEBD5B4E990A41DC /* Pods_NetlogMobilCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetlogMobilCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50C2C0E7758DA4673F17183 /* Pods_NetlogMobilCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAADC7005D60DBCE81BC59FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				760755764DDE438DD61E0C7D /* Pods-NetlogMobilCase.debug.xcconfig */,
+				EB20DF455EE11DC3010027E1 /* Pods-NetlogMobilCase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAE5A183570B249177595B72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFB97D5CEEBD5B4E990A41DC /* Pods_NetlogMobilCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7A2AA762621F545003F0DA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2AA772621F58E003F0DA5 /* AddressResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E7FF0EC52620F9CA0080F2D7 = {
 			isa = PBXGroup;
 			children = (
 				E7FF0ED02620F9CA0080F2D7 /* NetlogMobilCase */,
 				E7FF0ECF2620F9CA0080F2D7 /* Products */,
+				AAADC7005D60DBCE81BC59FE /* Pods */,
+				DAE5A183570B249177595B72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +98,7 @@
 		E7FF0ED02620F9CA0080F2D7 /* NetlogMobilCase */ = {
 			isa = PBXGroup;
 			children = (
+				E7A2AA762621F545003F0DA5 /* Model */,
 				E7FF0ED12620F9CA0080F2D7 /* AppDelegate.swift */,
 				E7FF0ED32620F9CA0080F2D7 /* SceneDelegate.swift */,
 				E7FF0ED52620F9CA0080F2D7 /* ViewController.swift */,
@@ -63,6 +106,10 @@
 				E7FF0EDA2620F9CC0080F2D7 /* Assets.xcassets */,
 				E7FF0EDC2620F9CC0080F2D7 /* LaunchScreen.storyboard */,
 				E7FF0EDF2620F9CC0080F2D7 /* Info.plist */,
+				E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */,
+				E7A2AA6C2621E819003F0DA5 /* Extension.swift */,
+				E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */,
+				E7A2AA732621F50D003F0DA5 /* GoogleService.swift */,
 			);
 			path = NetlogMobilCase;
 			sourceTree = "<group>";
@@ -74,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7FF0EE22620F9CC0080F2D7 /* Build configuration list for PBXNativeTarget "NetlogMobilCase" */;
 			buildPhases = (
+				E5EBCFD9E12F4417F894BD2A /* [CP] Check Pods Manifest.lock */,
 				E7FF0ECA2620F9CA0080F2D7 /* Sources */,
 				E7FF0ECB2620F9CA0080F2D7 /* Frameworks */,
 				E7FF0ECC2620F9CA0080F2D7 /* Resources */,
+				284B33C82D297479997A5D94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,14 +181,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		284B33C82D297479997A5D94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5EBCFD9E12F4417F894BD2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetlogMobilCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7FF0ECA2620F9CA0080F2D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A2AA6D2621E81A003F0DA5 /* Extension.swift in Sources */,
 				E7FF0ED62620F9CA0080F2D7 /* ViewController.swift in Sources */,
+				E7A2AA742621F50D003F0DA5 /* GoogleService.swift in Sources */,
+				E7A2AA782621F58E003F0DA5 /* AddressResult.swift in Sources */,
 				E7FF0ED22620F9CA0080F2D7 /* AppDelegate.swift in Sources */,
+				E7A2AA6A2621E30C003F0DA5 /* CollectionViewCell.swift in Sources */,
 				E7FF0ED42620F9CA0080F2D7 /* SceneDelegate.swift in Sources */,
+				E7A2AA702621ECA8003F0DA5 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +379,7 @@
 		};
 		E7FF0EE32620F9CC0080F2D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760755764DDE438DD61E0C7D /* Pods-NetlogMobilCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +399,7 @@
 		};
 		E7FF0EE42620F9CC0080F2D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB20DF455EE11DC3010027E1 /* Pods-NetlogMobilCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
