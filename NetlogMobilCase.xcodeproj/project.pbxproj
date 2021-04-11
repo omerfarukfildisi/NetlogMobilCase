@@ -83,6 +83,30 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
+		E78FA720262391B900D110BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2AA6C2621E819003F0DA5 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E78FA721262391E000D110BB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E78FA722262391F400D110BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2AA732621F50D003F0DA5 /* GoogleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E7A2AA762621F545003F0DA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +152,9 @@
 		E7FF0ED02620F9CA0080F2D7 /* NetlogMobilCase */ = {
 			isa = PBXGroup;
 			children = (
+				E78FA722262391F400D110BB /* Services */,
+				E78FA721262391E000D110BB /* Constants */,
+				E78FA720262391B900D110BB /* Extension */,
 				E7A2AA8E26224D1B003F0DA5 /* Controller */,
 				E7A2AA8D26224D05003F0DA5 /* View */,
 				E7A2AA762621F545003F0DA5 /* Model */,
@@ -137,9 +164,6 @@
 				E7FF0EDF2620F9CC0080F2D7 /* Info.plist */,
 				E7FF0ED12620F9CA0080F2D7 /* AppDelegate.swift */,
 				E7FF0ED32620F9CA0080F2D7 /* SceneDelegate.swift */,
-				E7A2AA6C2621E819003F0DA5 /* Extension.swift */,
-				E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */,
-				E7A2AA732621F50D003F0DA5 /* GoogleService.swift */,
 			);
 			path = NetlogMobilCase;
 			sourceTree = "<group>";

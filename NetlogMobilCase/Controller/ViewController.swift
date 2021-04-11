@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonPicker: UIButton!
     @IBOutlet weak var shipmentCollectionView: UICollectionView!
     @IBOutlet weak var billImageView: UIImageView!
+    @IBOutlet weak var viewContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,12 +43,19 @@ class ViewController: UIViewController {
         billImageView.isUserInteractionEnabled = true
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
         billImageView.addGestureRecognizer(imageTapRecognizer)
-                
     }
     
+    override func viewWillLayoutSubviews() {
+            super.viewWillLayoutSubviews()
+
+        viewContainer.roundCorners(corners: [.topLeft, .topRight], radius: 30)
+        }
+    
     @objc func selectImage() {
-            
-        self.performSegue(withIdentifier: "imageViewSegue", sender: self)
+    
+        let imageViewController = storyboard?.instantiateViewController(identifier: "imageViewController") as! ImageViewController
+        imageViewController.billImage = billImageView.image
+        present(imageViewController, animated: true, completion: nil)
         
     }
   
@@ -167,4 +175,15 @@ extension ViewController: CLLocationManagerDelegate {
         marker.map = mapView
     }
 }
+
+extension UIView {
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
+}
+
+
 
