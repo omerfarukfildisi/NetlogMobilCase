@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E71185592623348000AB895B /* ShipmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */; };
+		E78FA7112623490600D110BB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78FA7102623490600D110BB /* ImageViewController.swift */; };
 		E7A2AA6A2621E30C003F0DA5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */; };
 		E7A2AA6D2621E81A003F0DA5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA6C2621E819003F0DA5 /* Extension.swift */; };
 		E7A2AA702621ECA8003F0DA5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		760755764DDE438DD61E0C7D /* Pods-NetlogMobilCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetlogMobilCase.debug.xcconfig"; path = "Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase.debug.xcconfig"; sourceTree = "<group>"; };
 		E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		E78FA7102623490600D110BB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E7A2AA6C2621E819003F0DA5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */,
 				E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */,
+				E78FA7102623490600D110BB /* ImageViewController.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				E71185592623348000AB895B /* ShipmentCollectionViewCell.swift in Sources */,
 				E7A2AA6D2621E81A003F0DA5 /* Extension.swift in Sources */,
+				E78FA7112623490600D110BB /* ImageViewController.swift in Sources */,
 				E7FF0ED62620F9CA0080F2D7 /* ViewController.swift in Sources */,
 				E7A2AA742621F50D003F0DA5 /* GoogleService.swift in Sources */,
 				E7A2AA782621F58E003F0DA5 /* AddressResult.swift in Sources */,

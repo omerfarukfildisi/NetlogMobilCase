@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var buttonPicker: UIButton!
     @IBOutlet weak var shipmentCollectionView: UICollectionView!
+    @IBOutlet weak var billImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,18 @@ class ViewController: UIViewController {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         GMSServices.provideAPIKey("AIzaSyAGtN7co7XyS0EK0ZAxtR_yYzaCQqW_qU0")
+        // Recognizer
+        billImageView.isUserInteractionEnabled = true
+        let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
+        billImageView.addGestureRecognizer(imageTapRecognizer)
+                
     }
-
+    
+    @objc func selectImage() {
+            
+        self.performSegue(withIdentifier: "imageViewSegue", sender: self)
+        
+    }
   
 }
 

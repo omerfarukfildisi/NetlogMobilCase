@@ -134,6 +134,13 @@
                                     <constraint firstAttribute="bottom" secondItem="QhN-zR-Jki" secondAttribute="bottom" constant="10" id="e51-LW-bLT"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FzH-UL-813">
+                                <rect key="frame" x="10" y="608" width="156" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="7cj-Ur-Ane"/>
+                                    <constraint firstAttribute="height" constant="80" id="DNl-lQ-8Al"/>
+                                </constraints>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g1C-SQ-fnu">
                                 <rect key="frame" x="10" y="333" width="250" height="265"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -204,11 +211,11 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FzH-UL-813">
-                                <rect key="frame" x="10" y="608" width="156" height="80"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleBill" translatesAutoresizingMaskIntoConstraints="NO" id="Jd7-ol-enb">
+                                <rect key="frame" x="285" y="323" width="95" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="7cj-Ur-Ane"/>
-                                    <constraint firstAttribute="height" constant="80" id="DNl-lQ-8Al"/>
+                                    <constraint firstAttribute="width" constant="95" id="2qk-9U-QoU"/>
+                                    <constraint firstAttribute="height" constant="160" id="gJU-O6-KaQ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -218,6 +225,7 @@
                             <constraint firstItem="J96-QF-jRW" firstAttribute="top" secondItem="WIf-Tb-fxb" secondAttribute="bottom" id="2GH-UN-1Ci"/>
                             <constraint firstItem="6Yt-id-4oB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8AS-v4-cI4"/>
                             <constraint firstItem="FzH-UL-813" firstAttribute="top" secondItem="g1C-SQ-fnu" secondAttribute="bottom" constant="10" id="96K-Qw-PVr"/>
+                            <constraint firstItem="Jd7-ol-enb" firstAttribute="leading" secondItem="g1C-SQ-fnu" secondAttribute="trailing" constant="25" id="DI8-a7-iKQ"/>
                             <constraint firstItem="WIf-Tb-fxb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FTM-hJ-daO"/>
                             <constraint firstItem="FzH-UL-813" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="JEO-nI-6vC"/>
                             <constraint firstItem="WIf-Tb-fxb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MIz-BE-Nkl"/>
@@ -229,6 +237,7 @@
                             <constraint firstItem="g1C-SQ-fnu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dY4-fI-mve"/>
                             <constraint firstItem="cvw-KA-57S" firstAttribute="top" secondItem="WIf-Tb-fxb" secondAttribute="bottom" id="hLe-pn-lO9"/>
                             <constraint firstItem="WIf-Tb-fxb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iL8-dw-DZq"/>
+                            <constraint firstItem="Jd7-ol-enb" firstAttribute="top" secondItem="J96-QF-jRW" secondAttribute="bottom" constant="10" id="kXp-Oy-BWM"/>
                             <constraint firstItem="6Yt-id-4oB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vF3-Lf-IXY"/>
                             <constraint firstItem="cvw-KA-57S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wIN-SU-0dn"/>
                         </constraints>
@@ -236,17 +245,62 @@
                     <navigationItem key="navigationItem" id="65n-ny-bgI"/>
                     <connections>
                         <outlet property="addressLabel" destination="ARV-NU-sDq" id="E9L-4r-ybz"/>
+                        <outlet property="billImageView" destination="Jd7-ol-enb" id="Qyb-7M-e8M"/>
                         <outlet property="buttonPicker" destination="QhN-zR-Jki" id="V9I-Xm-hUb"/>
                         <outlet property="collectionView" destination="WIf-Tb-fxb" id="WXS-Jz-YId"/>
                         <outlet property="dateLabel" destination="ELO-K5-vdn" id="MSC-hZ-i8u"/>
                         <outlet property="mapContainer" destination="J96-QF-jRW" id="Reo-BC-JN8"/>
                         <outlet property="shipmentCollectionView" destination="g1C-SQ-fnu" id="PLB-vK-vrR"/>
                         <outlet property="userImageView" destination="FzH-UL-813" id="gWr-xX-Ikc"/>
+                        <segue destination="9c4-nI-3Zj" kind="show" identifier="imageViewSegue" id="4cS-3d-IEL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="zSY-Oh-rm6">
+            <objects>
+                <viewController id="9c4-nI-3Zj" customClass="ImageViewController" customModule="NetlogMobilCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RI8-yr-IFK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TAS-WW-kt7">
+                                <rect key="frame" x="-20" y="150" width="454" height="595"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sampleBill" translatesAutoresizingMaskIntoConstraints="NO" id="07x-aq-nOr">
+                                        <rect key="frame" x="20" y="20" width="414" height="555"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="3uk-Hq-BYg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="BUx-eN-lTM"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-n7-nRV">
+                                <rect key="frame" x="344" y="136" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedButton:" destination="9c4-nI-3Zj" eventType="touchUpInside" id="Aga-3a-LKV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ixH-WI-AiQ"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="zQt-b4-WEC"/>
+                    <connections>
+                        <outlet property="billImageView" destination="07x-aq-nOr" id="voi-8l-j4N"/>
+                        <outlet property="cancelButton" destination="cba-n7-nRV" id="REQ-9T-ecg"/>
+                        <outlet property="scrollView" destination="TAS-WW-kt7" id="sIP-qA-6oV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INe-bQ-a06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737.68115942029" y="92.410714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eh2-C0-Q02">
@@ -269,6 +323,7 @@
     </scenes>
     <resources>
         <image name="calander" width="24" height="24"/>
+        <image name="sampleBill" width="694" height="898"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
