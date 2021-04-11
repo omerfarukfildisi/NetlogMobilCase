@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71185592623348000AB895B /* ShipmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */; };
 		E7A2AA6A2621E30C003F0DA5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */; };
 		E7A2AA6D2621E81A003F0DA5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA6C2621E819003F0DA5 /* Extension.swift */; };
 		E7A2AA702621ECA8003F0DA5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		760755764DDE438DD61E0C7D /* Pods-NetlogMobilCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetlogMobilCase.debug.xcconfig"; path = "Target Support Files/Pods-NetlogMobilCase/Pods-NetlogMobilCase.debug.xcconfig"; sourceTree = "<group>"; };
+		E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentCollectionViewCell.swift; sourceTree = "<group>"; };
 		E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E7A2AA6C2621E819003F0DA5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -69,12 +71,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E78FA70E26233C6900D110BB /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */,
+				E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		E7A2AA762621F545003F0DA5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				E7A2AA772621F58E003F0DA5 /* AddressResult.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7A2AA8D26224D05003F0DA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E78FA70E26233C6900D110BB /* CollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7A2AA8E26224D1B003F0DA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7FF0ED52620F9CA0080F2D7 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E7FF0EC52620F9CA0080F2D7 = {
@@ -98,15 +125,15 @@
 		E7FF0ED02620F9CA0080F2D7 /* NetlogMobilCase */ = {
 			isa = PBXGroup;
 			children = (
+				E7A2AA8E26224D1B003F0DA5 /* Controller */,
+				E7A2AA8D26224D05003F0DA5 /* View */,
 				E7A2AA762621F545003F0DA5 /* Model */,
-				E7FF0ED12620F9CA0080F2D7 /* AppDelegate.swift */,
-				E7FF0ED32620F9CA0080F2D7 /* SceneDelegate.swift */,
-				E7FF0ED52620F9CA0080F2D7 /* ViewController.swift */,
 				E7FF0ED72620F9CA0080F2D7 /* Main.storyboard */,
 				E7FF0EDA2620F9CC0080F2D7 /* Assets.xcassets */,
 				E7FF0EDC2620F9CC0080F2D7 /* LaunchScreen.storyboard */,
 				E7FF0EDF2620F9CC0080F2D7 /* Info.plist */,
-				E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */,
+				E7FF0ED12620F9CA0080F2D7 /* AppDelegate.swift */,
+				E7FF0ED32620F9CA0080F2D7 /* SceneDelegate.swift */,
 				E7A2AA6C2621E819003F0DA5 /* Extension.swift */,
 				E7A2AA6F2621ECA8003F0DA5 /* Colors.swift */,
 				E7A2AA732621F50D003F0DA5 /* GoogleService.swift */,
@@ -228,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71185592623348000AB895B /* ShipmentCollectionViewCell.swift in Sources */,
 				E7A2AA6D2621E81A003F0DA5 /* Extension.swift in Sources */,
 				E7FF0ED62620F9CA0080F2D7 /* ViewController.swift in Sources */,
 				E7A2AA742621F50D003F0DA5 /* GoogleService.swift in Sources */,
