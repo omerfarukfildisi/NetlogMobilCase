@@ -78,7 +78,6 @@
 			children = (
 				E71185582623348000AB895B /* ShipmentCollectionViewCell.swift */,
 				E7A2AA692621E30C003F0DA5 /* CollectionViewCell.swift */,
-				E78FA7102623490600D110BB /* ImageViewController.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -127,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E7FF0ED52620F9CA0080F2D7 /* ViewController.swift */,
+				E78FA7102623490600D110BB /* ImageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
